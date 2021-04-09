@@ -2,11 +2,16 @@ name: Python CI
 
 on:
   - push
+  - pull_request
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Lint code
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
+      - name: Run linter
         run: |
           make lint
