@@ -10,13 +10,10 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
       - name: Install dependencies
         run: |
           pip install poetry
-          poetry install
+          make install
       - name: Run linter
         run: |
-          poetry run flake8 brain_games
+          make lint
