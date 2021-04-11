@@ -3,7 +3,7 @@
 """Even Odd game."""
 
 import prompt
-from brain_games.games.even_odd import start_game
+from brain_games.games.calc import start_game
 
 
 def main():
