@@ -3,16 +3,13 @@
 """Even Odd game."""
 
 import prompt
-from brain_games.games.even_odd import start_game
+from brain_games.engine import play
+from brain_games.games import even_odd
 
 
 def main():
     """Welcome user and start game."""
-    print('Welcome to the Brain Games')
-    name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
-
-    start_game(name)
+    play(even_odd)
 
 
 if __name__ == '__main__':
