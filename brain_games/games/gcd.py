@@ -21,6 +21,9 @@ def correct_answer(question):
     Parameters:
         question: str
 
+    Returns:
+        int
+
     """
     question_parts = question.split()
     x, y = int(question_parts[0]), int(question_parts[1])
@@ -34,6 +37,9 @@ def is_valid_answer(question, user_answer):
     Parameters:
         question: str
         user_answer: str
+
+    Returns:
+        int
 
     """
     return int(user_answer) == correct_answer(question)
