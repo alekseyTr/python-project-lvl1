@@ -1,18 +1,21 @@
 """Even odd game logic."""
 
-from brain_games.functions import is_even
+from brain_games import functions
 
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def get_questions():
+def get_questions(count):
     """Get questions for game.
+
+    Parameters:
+        count: int
 
     Returns:
         list
 
     """
-    return range(3)
+    return functions.generate_random_numbers(count)
 
 
 def correct_answer(question):
@@ -25,4 +28,4 @@ def correct_answer(question):
         list
 
     """
-    return ['yes', 'y'] if is_even(question) else ['no', 'n']
+    return ['yes', 'y'] if functions.is_even(question) else ['no', 'n']

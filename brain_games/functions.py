@@ -1,5 +1,7 @@
 """Common functions."""
 
+from random import randint
+
 
 def is_even(number):
     """Validate number.
@@ -40,3 +42,16 @@ def is_prime(n):
         w = 6 - w
 
     return True
+
+
+def generate_random_numbers(count=10):
+    """Generate random list of numbers.
+
+    Parameters:
+        count: int
+
+    Returns:
+        list
+
+    """
+    return (x + randint(0, 10) ** randint(1, 5) for x in range(count))

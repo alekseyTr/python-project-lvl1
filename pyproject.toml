@@ -10,8 +10,7 @@ packages = [
 ]
 
 classifiers = [
-  "Development Status :: 3 - Alpha",
-  "Development Status :: 5 - Production/Stable",
+  "Topic :: Education",
   "Environment :: Console"
 ]
 

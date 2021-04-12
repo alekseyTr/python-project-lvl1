@@ -1,16 +1,32 @@
 """Calculator game logic."""
 
+from random import randint
+
 DESCRIPTION = 'What is the result of the expression?'
 
+operands = ['+', '-', '*']
 
-def get_questions():
+
+def get_questions(count):
     """Get questions for game.
+
+    Question format: 'a + b', 'a - b'
+
+    Parameters:
+        count: int
 
     Returns:
         list
 
     """
-    return ['55 + 10', '25 - 11', '25 * 7']
+    questions = []
+    while len(questions) < count:
+        a, b = randint(1, 100), randint(1, 100)
+        if a < b:
+            a, b = b, a
+        questions.append('{0} {1} {2}'.format(a, operands[randint(0, 2)], b))
+
+    return questions
 
 
 def correct_answer(question):
