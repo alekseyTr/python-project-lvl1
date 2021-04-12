@@ -10,3 +10,6 @@
 
 ## Gcd
 [![asciicast](https://asciinema.org/a/406684.svg)](https://asciinema.org/a/406684)
+
+## Progression
+[![asciicast](https://asciinema.org/a/406727.svg)](https://asciinema.org/a/406727)

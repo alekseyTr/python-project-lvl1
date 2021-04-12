@@ -39,7 +39,7 @@ def is_valid_answer(question, user_answer):
         user_answer: str
 
     Returns:
-        int
+        bool
 
     """
     return int(user_answer) == correct_answer(question)
