@@ -2,7 +2,6 @@
 
 """Even Odd game."""
 
-import prompt
 from brain_games.engine import play
 from brain_games.games import even_odd
 

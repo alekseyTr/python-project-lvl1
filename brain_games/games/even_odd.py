@@ -40,4 +40,3 @@ def is_valid_answer(question, user_answer):
 
     """
     return user_answer in correct_answer(question)
-

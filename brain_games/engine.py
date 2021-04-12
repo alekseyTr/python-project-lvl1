@@ -8,7 +8,7 @@ def play(game):
     """Start game.
 
     Parameters:
-        game:
+        game: game module
 
     """
     user = logger.welcome_and_return_user()

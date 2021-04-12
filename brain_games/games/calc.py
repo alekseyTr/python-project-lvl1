@@ -50,4 +50,3 @@ def is_valid_answer(question, user_answer):
 
     """
     return int(user_answer) == correct_answer(question)
-
