@@ -1,11 +1,18 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["aleksey <tra@jcat.ru >"]
+description = "Brain games"
+authors = ["aleksey <alekseytr89@gmail.com >"]
+repository =  "https://github.com/alekseyTr/python-project-lvl1"
 
 packages = [
   { include = "brain_games" },
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console"
 ]
 
 [tool.poetry.scripts]
