@@ -1,18 +1,21 @@
 """Prime game logic."""
 
-from brain_games.functions import is_prime
+from brain_games import functions
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def get_questions():
+def get_questions(count):
     """Get questions for game.
+
+    Parameters:
+        count: int
 
     Returns:
         list
 
     """
-    return ['7', '8', '156']
+    return functions.generate_random_numbers(count)
 
 
 def correct_answer(question):
@@ -25,18 +28,4 @@ def correct_answer(question):
         list
 
     """
-    return ['yes', 'y'] if is_prime(int(question)) else ['no', 'n']
-
-
-def is_valid_answer(question, user_answer):
-    """Validate answer.
-
-    Parameters:
-        question: str
-        user_answer: str
-
-    Returns:
-        bool
-
-    """
-    return user_answer in correct_answer(question)
+    return ['yes', 'y'] if functions.is_prime(int(question)) else ['no', 'n']
