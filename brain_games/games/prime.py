@@ -26,17 +26,3 @@ def correct_answer(question):
 
     """
     return ['yes', 'y'] if is_prime(int(question)) else ['no', 'n']
-
-
-def is_valid_answer(question, user_answer):
-    """Validate answer.
-
-    Parameters:
-        question: str
-        user_answer: str
-
-    Returns:
-        bool
-
-    """
-    return user_answer in correct_answer(question)

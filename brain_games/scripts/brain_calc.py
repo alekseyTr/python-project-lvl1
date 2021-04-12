@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
-"""Even Odd game."""
+"""Calculator game."""
 
 from brain_games.engine import play
 from brain_games.games import calc
 
 
 def main():
-    """Start calc  game."""
+    """Welcome user and start game."""
     play(calc)
 
 

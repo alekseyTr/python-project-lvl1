@@ -34,17 +34,3 @@ def correct_answer(question):
         return 11
     elif question == '14 19 24 29 34 39 44 49 54 ..':
         return 59
-
-
-def is_valid_answer(question, user_answer):
-    """Validate answer.
-
-    Parameters:
-        question: str
-        user_answer: str
-
-    Returns:
-        bool
-
-    """
-    return int(user_answer) == correct_answer(question)

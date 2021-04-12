@@ -1,4 +1,4 @@
-"""Even odd game."""
+"""Even odd game logic."""
 
 from brain_games.functions import is_even
 
@@ -26,17 +26,3 @@ def correct_answer(question):
 
     """
     return ['yes', 'y'] if is_even(question) else ['no', 'n']
-
-
-def is_valid_answer(question, user_answer):
-    """Validate answer.
-
-    Parameters:
-        question: int
-        user_answer: str
-
-    Returns:
-        bool
-
-    """
-    return user_answer in correct_answer(question)

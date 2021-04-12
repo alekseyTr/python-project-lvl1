@@ -1,4 +1,4 @@
-"""Even odd game."""
+"""Calculator game logic."""
 
 DESCRIPTION = 'What is the result of the expression?'
 
@@ -36,17 +36,3 @@ def correct_answer(question):
     elif operator == '/':
         # todo: деление на ноль
         return x / y
-
-
-def is_valid_answer(question, user_answer):
-    """Validate answer.
-
-    Parameters:
-        question: str
-        user_answer: str
-
-    Returns:
-        bool
-
-    """
-    return int(user_answer) == correct_answer(question)
