@@ -7,3 +7,6 @@
 
 ## Calculator
 [![asciicast](https://asciinema.org/a/406522.svg)](https://asciinema.org/a/406522)
+
+## Gcd
+[![asciicast](https://asciinema.org/a/406684.svg)](https://asciinema.org/a/406684)

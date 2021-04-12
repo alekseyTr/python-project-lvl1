@@ -1,6 +1,8 @@
 """Gcd game logic."""
 
-DESCRIPTION = ''
+from math import gcd
+
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_questions():
@@ -10,7 +12,7 @@ def get_questions():
         list
 
     """
-    return []
+    return ['25 50', '100 52', '3 9']
 
 
 def correct_answer(question):
@@ -20,7 +22,10 @@ def correct_answer(question):
         question: str
 
     """
-    pass
+    question_parts = question.split()
+    x, y = int(question_parts[0]), int(question_parts[1])
+
+    return gcd(x, y)
 
 
 def is_valid_answer(question, user_answer):
@@ -31,4 +36,4 @@ def is_valid_answer(question, user_answer):
         user_answer: str
 
     """
-    pass
+    return int(user_answer) == correct_answer(question)
