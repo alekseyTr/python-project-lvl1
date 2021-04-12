@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
-"""Even Odd game."""
+"""Gcd game."""
 
 from brain_games.engine import play
-from brain_games.games import calc
+from brain_games.games import prime
 
 
 def main():
-    """Start calc  game."""
-    play(calc)
+    """Welcome user and start game."""
+    play(prime)
 
 
 if __name__ == '__main__':
