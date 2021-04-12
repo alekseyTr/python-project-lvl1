@@ -28,7 +28,7 @@ def answer(answer_text):
 
 def incorrect_answer(user_answer, correct_answer, user_name):
     """Log message for incorrect user answer."""
-    message = "'{0}' is wrong answer ;(. Correct answer was '{1}'. Let's try again, {2}!"
+    message = "'{0}' is wrong answer ;(. Correct answer was '{1}'. Let's try again, {2}!"  # noqa: E501
     print(message.format(user_answer, correct_answer, user_name))
 
 

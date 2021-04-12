@@ -16,11 +16,11 @@ def play(game):
 
     for question in game.get_questions():
         logger.question(question)
-        user_answer = prompt.string()
-        logger.answer(user_answer)
+        answer = prompt.string()
+        logger.answer(answer)
 
-        if not game.is_valid_answer(question, user_answer):
-            logger.incorrect_answer(user_answer, game.correct_answer(question), user)
+        if not game.is_valid_answer(question, answer):
+            logger.incorrect_answer(answer, game.correct_answer(question), user)
             return
         logger.correct_result()
 
